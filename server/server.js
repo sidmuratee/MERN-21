@@ -5,6 +5,7 @@ const routes = require('./routes');
 require('dotenv')
 const app = express();
 const PORT = process.env.PORT || 3001;
+process.env.MONGO_DB
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
